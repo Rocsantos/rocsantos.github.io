@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description"
+        content="Portfólio de Rodrigo Santos — Engenheiro de Software com foco em qualidade de software, automação de testes, APIs back-end e desktop com Tauri.">
+    <title>Rodrigo Santos · Engenheiro de Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="topbar">
+        <div class="wrap">
+            <nav aria-label="Navegação principal">
+                <a class="logo" href="#topo">RS.</a>
+                <div class="nav-right">
+                    <div class="links">
+                        <a href="#sobre">Sobre</a>
+                        <a href="#experiencia">Experiência</a>
+                        <a href="#github">GitHub</a>
+                        <a href="#casos">Estudos de caso</a>
+                        <a href="#skills">Stack</a>
+                        <a href="#contato">Contato</a>
+                    </div>
+                    <button class="theme-btn" id="themeToggle" type="button"
+                        aria-label="Alternar tema claro ou escuro">Tema</button>
+                </div>
+            </nav>
+        </div>
+        <div class="progress" id="progress"></div>
+    </div>
+
+    <!-- ================= HERO & RESUMO ================= -->
+    <div class="wrap" id="topo">
+        <header class="hero" id="sobre">
+            <div>
+                <span class="status"><i></i>Engenheiro de Software · QA · UnB (FCTE)</span>
+                <p class="kicker eyebrow">Arquitetura Back-end · Qualidade de Software · Brasília, DF</p>
+                <h1>
+                    <span class="line"><span>Rodrigo</span></span>
+                    <span class="line"><span><em>Santos</em></span></span>
+                </h1>
+                <p class="intro">
+                    Projeto e construo sistemas robustos de ponta a ponta: <strong>APIs escaláveis em Python e
+                        Node.js/NestJS</strong>, modelagem relacional, integração desktop nativa com
+                    <strong>Tauri</strong> e
+                    pipelines de testes automatizados e segurança.
+                </p>
+                <div class="cta">
+                    <a class="btn solid" href="#casos">Explorar projetos <span class="arr">→</span></a>
+                    <a class="btn" data-link="github" href="https://github.com/SEU-USUARIO" target="_blank"
+                        rel="noopener">GitHub</a>
+                    <a class="btn" data-link="linkedin" href="https://www.linkedin.com/in/SEU-PERFIL" target="_blank"
+                        rel="noopener">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="portrait">
+                <div class="frame">
+                    <img src="./assets/image/foto.png" alt="Retrato de Rodrigo Santos"
+                        onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 600 800%22><rect width=%22600%22 height=%22800%22 fill=%22%2321222c%22/><circle cx=%22300%22 cy=%22280%22 r=%22110%22 fill=%22none%22 stroke=%22%23bd93f9%22 stroke-width=%222%22 opacity=%220.6%22/><circle cx=%22300%22 cy=%22280%22 r=%22160%22 fill=%22none%22 stroke=%22%238be9fd%22 stroke-width=%221%22 stroke-dasharray=%226 6%22 opacity=%220.35%22/><text x=%22300%22 y=%22315%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22 font-weight=%22bold%22 font-size=%22112%22 fill=%22%23f8f8f2%22>RS.</text><text x=%22300%22 y=%22470%22 text-anchor=%22middle%22 font-family=%22monospace%22 font-size=%2218%22 letter-spacing=%224%22 fill=%22%23bd93f9%22>SOFTWARE ENGINEER</text><text x=%22300%22 y=%22510%22 text-anchor=%22middle%22 font-family=%22monospace%22 font-size=%2215%22 fill=%22%2394a3d8%22>BRASÍLIA · DF</text></svg>';">
+                </div>
+                <div class="caption">
+                    <b>Rodrigo Santos</b>
+                    Engenharia de Software · UnB
+                </div>
+            </div>
+        </header>
+        <!--
+  <div class="stats">
+    <div><b data-count="88" data-suffix="%">88%</b><span>cobertura de testes unitários no TCC</span></div>
+    <div><b data-count="38">38</b><span>cenários E2E automatizados (100% pass)</span></div>
+    <div><b id="repoCount" data-count="12" data-suffix="+">12+</b><span>projetos e repositórios técnicos</span></div>
+    <div><b data-count="4">4</b><span>arquiteturas documentadas em detalhe</span></div>
+  </div>
+-->
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Python</span>
+            <span>Django REST</span>
+            <span>Robot Framework</span>
+            <span>Scikit-learn</span>
+            <span>TypeScript</span>
+            <span>NestJS</span>
+            <span>React</span>
+            <span>Tauri</span>
+            <span>Prisma ORM</span>
+            <span>MySQL 8</span>
+            <span>Docker</span>
+            <span>SonarCloud</span>
+        </div>
+    </div>
+
+    <!-- ================= EXPERIÊNCIA PROFISSIONAL ================= -->
+    <section id="experiencia">
+        <div class="wrap">
+            <div class="sec-head reveal">
+                <p class="sec-tag eyebrow">Experiência</p>
+                <div>
+                    <h2>Trajetória profissional</h2>
+                    <p>Dois estágios em ambientes de alta criticidade: garantia de qualidade numa plataforma de
+                        licitações
+                        públicas e desenvolvimento full stack no Supremo Tribunal Federal.</p>
+                </div>
+            </div>
+
+            <ol class="timeline">
+                <!-- Estágio 1: QA -->
+                <li class="job reveal">
+                    <div class="job-when">
+                        <span class="eyebrow">jun. 2025 – jul. 2026</span>
+                        <span class="job-type">Estágio · Quality Assurance</span>
+                    </div>
+                    <div class="job-body">
+                        <h3>Estagiário de Quality Assurance</h3>
+                        <p class="job-org">Portal de Compras Públicas</p>
+                        <p class="job-lede">Garantia de qualidade de uma plataforma de licitações e compras
+                            governamentais, um
+                            ambiente de alta criticidade, em time Scrum do refinamento à validação das entregas.</p>
+
+                        <div class="job-nums">
+                            <div><b data-count="40" data-suffix="+">40+</b><span>fluxos E2E automatizados em Robot
+                                    Framework</span>
+                            </div>
+                            <div><b data-count="12" data-prefix="~">~12</b><span>fluxos E2E automatizados em
+                                    Cypress</span></div>
+                            <div><b data-count="30" data-prefix="~">~30</b><span>endpoints REST validados com
+                                    Postman</span></div>
+                        </div>
+
+                        <ul class="job-list">
+                            <li>Participei dos <b>refinamentos</b>, definindo critérios de aceite e documentando planos
+                                de teste.</li>
+                            <li>Automatizei a regressão com <b>Robot Framework</b> e <b>Cypress</b>, ampliando a
+                                cobertura dos testes
+                                da aplicação.</li>
+                            <li>Validei contratos, códigos de retorno e regras de negócio da API com <b>Postman</b>.
+                            </li>
+                            <li>Escrevi cenários em <b>Gherkin (BDD)</b>, gerenciei casos de teste no <b>Qase</b> e
+                                acompanhei
+                                defeitos no <b>Azure DevOps</b> e no <b>Jira</b>.</li>
+                            <li>Executei testes manuais exploratórios e baseados em cenários para validar novas
+                                funcionalidades.</li>
+                        </ul>
+
+                        <p class="job-catch"><b>Defeito encontrado</b>Ao carregar licitações com mais de 200 itens, a
+                            resposta
+                            era truncada e parte dos itens do processo não aparecia. Identifiquei o comportamento e o
+                            reportei ao
+                            time.</p>
+
+                        <div class="pills">
+                            <span class="pill">Robot Framework</span>
+                            <span class="pill">Cypress</span>
+                            <span class="pill">Postman</span>
+                            <span class="pill">Gherkin / BDD</span>
+                            <span class="pill">Qase</span>
+                            <span class="pill">Azure DevOps</span>
+                            <span class="pill">Jira</span>
+                            <span class="pill">Git</span>
+                            <span class="pill">Scrum</span>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Estágio 2: STF -->
+                <li class="job reveal">
+                    <div class="job-when">
+                        <span class="eyebrow">ago. 2021 – jul. 2022</span>
+                        <span class="job-type">Estágio · Full Stack · Brasília, DF</span>
+                    </div>
+                    <div class="job-body">
+                        <h3>Estagiário de Desenvolvimento Full Stack</h3>
+                        <p class="job-org">Supremo Tribunal Federal (STF)</p>
+                        <p class="job-lede">Desenvolvimento e manutenção de aplicações web na mais alta corte do
+                            Judiciário
+                            brasileiro, do banco de dados à interface.</p>
+
+                        <ul class="job-list">
+                            <li>Desenvolvi e mantive aplicações com <b>Angular</b> no front-end e <b>Java com Spring
+                                    Boot</b> no
+                                back-end.</li>
+                            <li>Modelei dados e escrevi consultas em <b>MySQL</b>.</li>
+                            <li>Conteinerizei as aplicações com <b>Docker</b>, padronizando os ambientes de
+                                desenvolvimento e
+                                implantação.</li>
+                            <li>Construí a base de arquitetura e boas práticas de código que hoje uso para ler, testar e
+                                investigar
+                                defeitos.</li>
+                        </ul>
+
+                        <div class="pills">
+                            <span class="pill">Angular</span>
+                            <span class="pill">TypeScript</span>
+                            <span class="pill">Java</span>
+                            <span class="pill">Spring Boot</span>
+                            <span class="pill">MySQL</span>
+                            <span class="pill">Docker</span>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+
+    <!-- ================= PROJETOS NO GITHUB ================= -->
+    <section id="github">
+        <div class="wrap">
+            <div class="sec-head reveal">
+                <p class="sec-tag eyebrow">Código Aberto</p>
+                <div>
+                    <h2>Repositórios no GitHub</h2>
+                    <p>Seleção de projetos, ferramentas e estudos técnicos disponíveis no meu perfil.</p>
+                </div>
+            </div>
+
+            <div class="repo-header-bar reveal">
+                <span id="ghStatus">Exibindo projetos em destaque · configure seu usuário no script para sincronização
+                    automática</span>
+                <a data-link="github" href="https://github.com/SEU-USUARIO" target="_blank" rel="noopener">Abrir perfil
+                    completo
+                    no GitHub →</a>
+            </div>
+
+            <div class="grid" id="repoGrid">
+                <div class="item reveal">
+                    <div class="kind">Back-end · IA · Qualidade</div>
+                    <h4><a data-link="github" href="https://github.com/SEU-USUARIO" target="_blank"
+                            rel="noopener">WebTutoria
+                            API</a></h4>
+                    <p>API REST em Django com motor híbrido de recomendação (Scikit-learn), cobertura de testes
+                        unitários de 88% e
+                        suíte E2E com Robot Framework.</p>
+                    <div class="langs">Python · Django REST · Scikit-learn · Robot</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ESTUDOS DE CASO ================= -->
+    <section id="casos">
+        <div class="wrap">
+            <div class="sec-head reveal">
+                <p class="sec-tag eyebrow">Arquitetura & Código</p>
+                <div>
+                    <h2>Projetos contados por dentro</h2>
+                    <p>Mais do que listas de tecnologias: o contexto de cada sistema, as decisões de arquitetura, o
+                        fluxo de dados
+                        e as estratégias de validação que sustentam cada entrega.</p>
+                </div>
+            </div>
+
+            <!-- Caso 1: WebTutoria -->
+            <article class="case wt" id="webtutoria">
+                <aside class="file reveal">
+                    <span class="idx">i.</span>
+                    <h3>WebTutoria</h3>
+                    <p class="what">Plataforma de tutoria acadêmica com recomendação híbrida e garantia de qualidade
+                        multi-camada.
+                    </p>
+                    <dl class="facts">
+                        <div>
+                            <dt>Contexto</dt>
+                            <dd>Graduação · UnB (FCTE)</dd>
+                        </div>
+                        <div>
+                            <dt>Back-end</dt>
+                            <dd>Python · Django REST</dd>
+                        </div>
+                        <div>
+                            <dt>Recomendação</dt>
+                            <dd>Scikit-learn + Métricas</dd>
+                        </div>
+                        <div>
+                            <dt>Qualidade</dt>
+                            <dd>SonarCloud · Robot · Pytest</dd>
+                        </div>
+                    </dl>
+                    <div class="pills">
+                        <span class="pill gold">Destaque</span>
+                        <span class="pill">Python</span>
+                        <span class="pill">Django REST</span>
+                        <span class="pill">Scikit-learn</span>
+                        <span class="pill">Robot Framework</span>
+                        <span class="pill">Selenium</span>
+                        <span class="pill">coverage.py</span>
+                        <span class="pill">SonarCloud</span>
+                    </div>
+                    <div class="go">
+                        <a href="https://github.com/orgs/TutoriaWebApp/repositories" target="_blank" rel="noopener">
+                            Ver código no GitHub →
+                        </a>
+                        <a href="https://frontend-tan-psi-widf390s11.vercel.app/" target="_blank" rel="noopener">
+                            Acessar plataforma →
+                        </a>
+                    </div>
+                </aside>
+
+                <div class="story">
+                    <figure class="cover cover-wt reveal">
+                        <div>
+                            <span class="cover-tag">Motor Híbrido & Telemetria de QA</span>
+                            <p class="cover-title">Recomendação personalizada respaldada por verificação contínua.</p>
+                        </div>
+                        <div class="qa-panel" aria-hidden="true">
+                            <div class="qa-row"><span>Unit Tests (coverage.py)</span><span class="badge-ok">88.0%
+                                    COV</span></div>
+                            <div class="qa-row"><span>E2E (Robot + Selenium)</span><span class="badge-ok">38 / 38
+                                    PASS</span></div>
+                            <div class="qa-row"><span>API Integration (Postman)</span><span
+                                    class="badge-ok">VERIFIED</span></div>
+                            <div class="qa-row"><span>Security Gate (SonarCloud)</span><span class="badge-ok">RATING
+                                    A</span></div>
+                        </div>
+                        <figcaption>Indicadores reais de qualidade e cobertura alcançados na suíte de validação da
+                            plataforma.
+                        </figcaption>
+                    </figure>
+
+                    <p class="lede reveal">Conecta estudantes e monitores combinando <b>filtragem baseada em conteúdo
+                            com métricas
+                            comportamentais</b>, sustentada por uma esteira rigorosa de testes automatizados e análise
+                        estática.</p>
+
+                    <div class="block reveal">
+                        <h4>O problema & a arquitetura</h4>
+                        <p>Encontrar a monitoria adequada dentro de cursos de engenharia exige cruzar afinidade
+                            temática, histórico
+                            de interação e disponibilidade. Desenvolvi a API em Django REST Framework integrando um
+                            motor de
+                            recomendação híbrido com Scikit-learn para ranquear tutores e materiais de forma relevante
+                            desde os
+                            primeiros acessos.</p>
+                    </div>
+
+                    <div class="bignums reveal">
+                        <div><b data-count="88" data-suffix="%">88%</b><span>cobertura de testes unitários</span></div>
+                        <div><b data-count="38">38</b><span>cenários E2E com 100% de êxito</span></div>
+                        <div><b>A</b><span>conceito de segurança no SonarCloud</span></div>
+                    </div>
+
+                    <div class="block reveal">
+                        <h4>Pipeline de Dados e Garantia de Qualidade</h4>
+                        <div class="diagram">
+                            <div class="flow">
+                                <div class="node src">Perfil Acadêmico & Interações<small>disciplinas · histórico ·
+                                        engajamento</small>
+                                </div>
+                                <div class="pipe"><i>vetorização TF-IDF + pesos</i></div>
+                                <div class="node hot">Motor Híbrido (Scikit-learn)<small>similaridade de conteúdo +
+                                        métricas
+                                        comportamentais</small></div>
+                                <div class="pipe"><i>Django REST Framework</i></div>
+                                <div class="branch">
+                                    <div>
+                                        <div class="node">Testes Unitários & API<small>coverage.py (88%) + coleções
+                                                Postman</small></div>
+                                    </div>
+                                    <div>
+                                        <div class="node">E2E & Análise Estática<small>Robot Framework (38 fluxos) +
+                                                SonarCloud</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="cap">Cada entrega passa por validação automatizada em quatro níveis antes da
+                                integração.</p>
+                        </div>
+                    </div>
+
+                    <div class="block reveal">
+                        <h4>Decisões técnicas</h4>
+                        <ul class="decisions">
+                            <li><b>Recomendação Híbrida</b><span>Combina características textuais das disciplinas
+                                    (Scikit-learn) com
+                                    sinais comportamentais para mitigar o problema de cold-start.</span></li>
+                            <li><b>E2E Legível por Negócio</b><span>Uso de Robot Framework com SeleniumLibrary para
+                                    descrever os 38
+                                    fluxos críticos de ponta a ponta em linguagem declarativa.</span></li>
+                            <li><b>Qualidade Mensurável</b><span>Monitoramento contínuo de dívida técnica e
+                                    vulnerabilidades via
+                                    SonarCloud, zerando code smells de segurança.</span></li>
+                            <li><b>Documentação Acadêmica</b><span>Especificação arquitetural e resultados documentados
+                                    formalmente em
+                                    LaTeX (padrão abnTeX2).</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Caso 2: Gestão Arquitetura + Tauri Sync -->
+            <article class="case arc" id="arquitetura-tauri">
+                <aside class="file reveal">
+                    <span class="idx">ii.</span>
+                    <h3>ERP Arquitetura & Sync CAD/BIM</h3>
+                    <p class="what">Monolito modular web integrado a agente desktop nativo para sincronização de
+                        arquivos técnicos
+                        em rede.</p>
+                    <dl class="facts">
+                        <div>
+                            <dt>Arquitetura</dt>
+                            <dd>Monolito Modular + Desktop</dd>
+                        </div>
+                        <div>
+                            <dt>Back-end</dt>
+                            <dd>NestJS · Prisma · MySQL 8</dd>
+                        </div>
+                        <div>
+                            <dt>Storage</dt>
+                            <dd>MinIO (S3) + SMB Share</dd>
+                        </div>
+                        <div>
+                            <dt>Desktop / Web</dt>
+                            <dd>Tauri · React · Vite</dd>
+                        </div>
+                    </dl>
+                    <div class="pills">
+                        <span class="pill">NestJS</span>
+                        <span class="pill">Prisma ORM</span>
+                        <span class="pill">MySQL 8</span>
+                        <span class="pill">MinIO</span>
+                        <span class="pill">Tauri</span>
+                        <span class="pill">React</span>
+                        <span class="pill">TanStack Query</span>
+                        <span class="pill">Tailwind CSS</span>
+                    </div>
+                    <div class="go">
+                        <a href="https://github.com/Rocsantos/Architecture" target="_blank" rel="noopener">
+                            Ver código no GitHub →
+                        </a>
+                    </div>
+                </aside>
+
+                <div class="story">
+                    <figure class="cover cover-arc reveal">
+                        <div>
+                            <span class="cover-tag">Web + Desktop Tray Agent</span>
+                            <p class="cover-title">Gestão na nuvem, arquivos CAD/BIM sincronizados na rede local.</p>
+                        </div>
+                        <div class="sync-card" aria-hidden="true">
+                            <div class="sync-head"><span>Tauri Tray Agent</span><span class="sync-pill">SMB ↔
+                                    MinIO</span></div>
+                            <div class="sync-bar"><span></span></div>
+                            <div class="sync-item"><span>planta_executiva_v4.dwg</span><b>OK</b></div>
+                            <div class="sync-item"><span>modelo_estrutural.rvt</span><b>SYNC</b></div>
+                        </div>
+                        <figcaption>Integração entre o navegador e o sistema de arquivos local via agente leve em Tauri.
+                        </figcaption>
+                    </figure>
+
+                    <p class="lede reveal">Une um <b>monolito modular em NestJS</b> para gestão operacional de
+                        escritórios de
+                        arquitetura a um <b>agente desktop em Tauri</b> que sincroniza projetos pesados em rede SMB e
+                        MinIO.</p>
+
+                    <div class="block reveal">
+                        <h4>O desafio técnico</h4>
+                        <p>Escritórios de arquitetura lidam diariamente com arquivos CAD e BIM volumosos armazenados em
+                            servidores
+                            locais (Windows Share/SMB), mas precisam de gestão ágil na web. A arquitetura separa os
+                            metadados
+                            relacionais no MySQL 8, o armazenamento de objetos no MinIO e a ponte com o sistema
+                            operacional através de
+                            um aplicativo de bandeja (system tray) construído com Tauri.</p>
+                    </div>
+
+                    <div class="block reveal">
+                        <h4>Decisões técnicas</h4>
+                        <ul class="decisions">
+                            <li><b>Monolito Modular em NestJS</b><span>Domínios isolados por módulos bem definidos com
+                                    Prisma ORM,
+                                    facilitando manutenção e futura extração de serviços.</span></li>
+                            <li><b>Agente Nativo Leve com Tauri</b><span>Baixíssimo consumo de memória em comparação ao
+                                    Electron para
+                                    rodar continuamente na bandeja do Windows gerenciando shares SMB.</span></li>
+                            <li><b>Storage Compatível com S3</b><span>Uso do MinIO para versionamento e entrega segura
+                                    de ativos
+                                    digitais sem acoplamento a provedores proprietários.</span></li>
+                            <li><b>Interface Reativa Tipada</b><span>Front-end em React, Vite, Tailwind CSS e TanStack
+                                    Query para
+                                    cache inteligente e sincronização otimista de estado.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills">
+        <div class="wrap">
+            <div class="sec-head reveal">
+                <p class="sec-tag eyebrow">Stack Técnica</p>
+                <div>
+                    <h2>Ferramentas que domino</h2>
+                    <p>Tecnologias aplicadas em produção, projetos acadêmicos e arquiteturas distribuídas.</p>
+                </div>
+            </div>
+
+            <div class="skillgroups">
+                <div class="reveal">
+                    <h4 class="eyebrow">Back-end & Dados</h4>
+                    <ul>
+                        <li>Python <span>Django REST</span></li>
+                        <li>Node.js <span>NestJS</span></li>
+                        <li>Prisma ORM</li>
+                        <li>MySQL <span>8.x</span></li>
+                        <li>Modelagem SQL <span>SBD</span></li>
+                        <li>MinIO <span>S3 Storage</span></li>
+                    </ul>
+                </div>
+
+                <div class="reveal d1">
+                    <h4 class="eyebrow">Qualidade & Segurança</h4>
+                    <ul>
+                        <li>Robot Framework <span>E2E</span></li>
+                        <li>SeleniumLibrary</li>
+                        <li>coverage.py <span>Unit</span></li>
+                        <li>Postman <span>Integração</span></li>
+                        <li>SonarCloud / SonarQube</li>
+                        <li>OWASP SAMM & BSIMM</li>
+                    </ul>
+                </div>
+
+                <div class="reveal d2">
+                    <h4 class="eyebrow">Front-end & Desktop</h4>
+                    <ul>
+                        <li>TypeScript</li>
+                        <li>React <span>Vite</span></li>
+                        <li>Tailwind CSS</li>
+                        <li>TanStack Query</li>
+                        <li>Tauri <span>Desktop</span></li>
+                        <li>HTML5 & CSS3</li>
+                    </ul>
+                </div>
+
+                <div class="reveal d3">
+                    <h4 class="eyebrow">Infra & Engenharia</h4>
+                    <ul>
+                        <li>Docker & Compose</li>
+                        <li>Caddy <span>Reverse Proxy</span></li>
+                        <li>Arquitetura Modular</li>
+                        <li>Scikit-learn <span>ML Híbrido</span></li>
+                        <li>Git & CI/CD</li>
+                        <li>LaTeX <span>abnTeX2</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section class="contact" id="contato">
+        <div class="wrap">
+            <p class="eyebrow reveal" style="color:var(--ochre)">Contato</p>
+            <h2 class="reveal" style="margin-top:16px">Vamos construir algo <em>sólido?</em></h2>
+            <p class="reveal">
+                Disponível para oportunidades em Engenharia de Software, Arquitetura de Software,
+                Qualidade de Software, Desenvolvimento Full Stack e Consultoria Técnica.
+            </p>
+            <div class="cta reveal">
+                <a class="btn solid" data-link="linkedin" href="https://www.linkedin.com/in/SEU-PERFIL" target="_blank"
+                    rel="noopener">LinkedIn <span class="arr">→</span></a>
+                <a class="btn" data-link="github" href="https://github.com/SEU-USUARIO" target="_blank"
+                    rel="noopener">GitHub</a>
+                <a class="btn" id="emailBtn" href="mailto:seu.email@exemplo.com">seu.email@exemplo.com</a>
+                <a class="btn" id="whatsBtn" href="https://wa.me/5561900000000" target="_blank"
+                    rel="noopener">WhatsApp</a>
+                <a class="btn" href="./assets/doc/RodrigoSantos_Curriculo_EngSoftware_Jr.pdf" target="_blank"
+                    rel="noopener">
+                    Currículo em Português
+                </a>
+                <a class="btn" href="./assets/doc/RodrigoSantos_Resume_SoftwareEngineer_Jr.pdf" target="_blank"
+                    rel="noopener">
+                    English Curriculum
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrap">
+            <span>© <span id="year"></span> Rodrigo Carvalho dos Santos · Brasília, DF</span>
+            <span>
+                <a data-link="github" href="https://github.com/SEU-USUARIO" target="_blank" rel="noopener">GitHub</a> ·
+                <a data-link="linkedin" href="https://www.linkedin.com/in/SEU-PERFIL" target="_blank"
+                    rel="noopener">LinkedIn</a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="index.js" defer></script>
+</body>
+
+</html>
